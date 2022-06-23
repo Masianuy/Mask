@@ -11,7 +11,7 @@ window.onscroll = () => {
 const humburger = document.getElementById('humburger');
 const iconHumb = document.getElementById('icon-humburger');
 const iconClose = document.getElementById('icon-close');
-const phoneNav = document.getElementById('phone-nav');
+const phoneNav = document.getElementById('inner-nav');
 
 humburger.addEventListener('click', function() {
   if(humburger.classList.contains('open')) {
@@ -23,7 +23,7 @@ humburger.addEventListener('click', function() {
     humburger.classList.add('open');
     iconHumb.style.display = 'none';
     iconClose.style.display = 'block';
-    phoneNav.style.display = 'block';
+    phoneNav.style.display = 'flex';
   }
 })
 

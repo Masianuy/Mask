@@ -754,6 +754,29 @@ footer {
 
 
 @media screen and (max-width: 991px) {
+  .wrapper-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    max-width: 1141px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .inner-nav {
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    bottom: -100%;
+    background-color: #ffffffe0;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+
   .humburger {
     display: block;
     cursor: pointer;
@@ -764,31 +787,32 @@ footer {
     display: none;
   }
 
-  .phone-nav {
-    position: absolute;
-    top: 100%;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 5000;
-  }
-
-  .phone-nav-list {
-    display: flex;
+  .nav-list {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #ffffffe0;
-    height: 100vh;
   }
 
-  .phone-nav-item {
+  .nav-item {
+    margin: 0;
     padding: 15px 0;
   }
 
-  .phone-nav-item a {
-    font-size: 1.7rem;
+  .nav-item a {
+    font-size: 2rem;
     font-weight: 600;
+  }
+
+  .inner-nav .btn {
+    margin-top: 30px;
+    font-size: 1.2rem;
+    padding: 16px 25px;
+  }
+
+  .inner-nav {
+    display: none;
+  }
+  
+  #icon-close {
+    display: none;
   }
 }
 
@@ -811,10 +835,6 @@ footer {
 
   .btn {
     padding: 12px 20px;
-  }
-
-  .inner-nav {
-    display: none;
   }
 
   .benefit-item {
