@@ -776,10 +776,14 @@ footer {
   .phone-nav-list {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     background-color: #ffffffe0;
     height: 100vh;
+  }
+
+  .phone-nav-item {
+    padding: 15px 0;
   }
 
   .phone-nav-item a {
