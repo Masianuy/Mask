@@ -84,7 +84,7 @@ header {
   left: 50vw;
   border-radius: 0 0 0 150px;
   overflow: hidden;
-  background-image: url(./img/delivery-of-goods-and-products-or-vaccine-in-coron-.png);
+  background-image: url('../img/delivery-of-goods-and-products-or-vaccine-in-coron-.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -241,19 +241,19 @@ nav {
 }
 
 .benefit-item-1::before {
-  background-image: url('./img/box.svg');
+  background-image: url('../img/box.svg');
 }
 
 .benefit-item-2::before {
-  background-image: url('./img/checked\ 1.svg');
+  background-image: url('../img/checked\ 1.svg');
 }
 
 .benefit-item-3::before {
-  background-image: url('./img/people.svg');
+  background-image: url('../img/people.svg');
 }
 
 .benefit-item-4::before {
-  background-image: url('./img/card.svg');
+  background-image: url('../img/card.svg');
 }
 
 .benefits-title {
@@ -278,7 +278,7 @@ nav {
   right: 53.6%;
   top: 30px;
   bottom: 0;
-  background-image: url(./img/Vector.svg);
+  background-image: url('../img/Vector.svg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -335,7 +335,7 @@ nav {
 .info-block-1 {
   grid-column: 1 / 3;
   grid-row: 1 / 3;
-  background-image: url(./img/Health\ Pro\ N95_factory.png);
+  background-image: url('../img/Health\ Pro\ N95_factory.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
