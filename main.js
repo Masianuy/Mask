@@ -1,4 +1,12 @@
 'use strict';
+const nav = document.getElementById('nav');
+window.onscroll = () => {
+  if(window.pageYOffset > 50) {
+    nav.style.backgroundColor = '#ffffffe0';
+  } else {
+    nav.style.backgroundColor = 'transparent';
+  }
+}
 
 const humburger = document.getElementById('humburger');
 const iconHumb = document.getElementById('icon-humburger');

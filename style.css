@@ -111,7 +111,6 @@ nav {
   left: 0;
   right: 0;
   width: 100vw;
-  background-color: #F5FCFA45;
   z-index: 6000;
 }
 
@@ -122,7 +121,6 @@ nav {
   padding: 20px 40px;
   max-width: 1141px;
   margin: 0 auto;
-  background-color: #ffffffe0;
 }
 
 .wrapper-logo {
@@ -754,6 +752,42 @@ footer {
   margin-right: 15px;
 }
 
+
+@media screen and (max-width: 991px) {
+  .humburger {
+    display: block;
+    cursor: pointer;
+    color: var(--accent);
+  }
+
+  #icon-close {
+    display: none;
+  }
+
+  .phone-nav {
+    position: absolute;
+    top: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 5000;
+  }
+
+  .phone-nav-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffffffe0;
+    height: 100vh;
+  }
+
+  .phone-nav-item a {
+    font-size: 1.7rem;
+    font-weight: 600;
+  }
+}
+
 @media screen and (max-width: 991px) {
   h1 {
     font-size: 3.9rem;
@@ -1040,49 +1074,12 @@ footer {
   .info-btn {
     margin: 10px auto 0;
   }
-}
 
-@media screen and (max-width: 321px) {
   .benefit-item {
     width: 100%;
   }
 
   .benefits-title {
     font-size: 1.2rem;
-  }
-}
-
-@media screen and (max-width: 991px) {
-  .humburger {
-    display: block;
-    cursor: pointer;
-    color: var(--accent);
-  }
-
-  #icon-close {
-    display: none;
-  }
-
-  .phone-nav {
-    position: absolute;
-    top: 100%;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 5000;
-  }
-
-  .phone-nav-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #ffffffe0;
-    height: 100vh;
-  }
-
-  .phone-nav-item a {
-    font-size: 1.7rem;
-    font-weight: 600;
   }
 }
