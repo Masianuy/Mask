@@ -48,6 +48,10 @@ li {
   list-style-type: none;
 }
 
+button {
+  cursor: pointer;
+}
+
 .container {
   max-width: 1141px;
   margin: 0 auto;
@@ -124,10 +128,11 @@ nav {
   margin: 0 auto;
 }
 
-.wrapper-logo {
-  width: 160px;
-  height: 40px;
-  background-color: var(--lightGrey);
+.wrapper-logo img {
+  object-fit: cover;
+  object-position: center;
+  width: auto;
+  height: 70px;
 }
 
 .inner-nav {
@@ -146,9 +151,25 @@ nav {
 
 .nav-item-link {
   color: var(--lightGrey);
+  position: relative;
+}
+
+.nav-item-link:hover::after {
+  position: absolute;
+  content: '';
+  left: -18px;
+  right: -18px;
+  top: -10px;
+  bottom: -10px;
+  border: 1px solid var(--accent);
+  border-radius: 15px;
 }
 
 .nav-item-link.active {
+  color: var(--darkGrey);
+}
+
+.nav-item-link:hover {
   color: var(--darkGrey);
 }
 
@@ -190,12 +211,25 @@ nav {
   background-color: var(--blue);
   color: var(--white);
   box-shadow: 0px 10px 15px rgba(27, 95, 193, 0.19);
+  border: 1px solid transparent;
+}
+
+.blue-btn:hover {
+  background-color: transparent;
+  color: var(--blue);
+  border: 1px solid var(--blue);
 }
 
 .light-btn {
   background-color: transparent;
   border: 1px solid var(--accent);
   color: var(--accent);
+}
+
+.light-btn:hover {
+  border: 1px solid transparent;
+  background-color: var(--accent);
+  color: var(--white);
 }
 
 .header-img {
@@ -413,6 +447,11 @@ nav {
   right: -40px;
   content: '';
   border-right: 1px solid var(--white);
+}
+
+.info-btn:hover {
+  color: var(--white);
+  border: 1px solid var(--white);
 }
 
 .info-phone {
