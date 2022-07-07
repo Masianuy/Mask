@@ -17,6 +17,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   color: var(--lightGrey);
+  overflow-x: hidden;
 }
 
 h1 {
